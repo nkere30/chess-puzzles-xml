@@ -2,5 +2,94 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+    <bean id="whiteRooE" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="R"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="E"/>
+                <constructor-arg value="1"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackKingB" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="k"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="B"/>
+                <constructor-arg value="2"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackKnightC3" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="n"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="C"/>
+                <constructor-arg value="3"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whiteBishopD3" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="B"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="D"/>
+                <constructor-arg value="3"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whitePawnF3" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="P"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="F"/>
+                <constructor-arg value="3"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whiteKingC4" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="K"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="C"/>
+                <constructor-arg value="4"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whiteBishopD4" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="B"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="D"/>
+                <constructor-arg value="4"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whitePawnC6" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="P"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="C"/>
+                <constructor-arg value="6"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackPawnD7" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="p"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="D"/>
+                <constructor-arg value="7"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackBishopE7" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="b"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="E"/>
+                <constructor-arg value="7"/>
+            </bean>
+        </constructor-arg>
+    </bean>
 </beans>
