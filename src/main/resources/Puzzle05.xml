@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="whiteKingG" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="K"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="G"/>
+                <constructor-arg value="1"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whiteKnightG" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="N"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="G"/>
+                <constructor-arg value="2"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="whitePawnH" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="P"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="H"/>
+                <constructor-arg value="2"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackKnightG" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="n"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="G"/>
+                <constructor-arg value="3"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackKnightF" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="n"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="F"/>
+                <constructor-arg value="4"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackPawnH7" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="p"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="H"/>
+                <constructor-arg value="7"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="blackKingH8" class="com.epam.rd.autotasks.chesspuzzles.ChessPieceImpl">
+        <constructor-arg value="k"/>
+        <constructor-arg>
+            <bean class="com.epam.rd.autotasks.chesspuzzles.Cell" factory-method="cell">
+                <constructor-arg value="H"/>
+                <constructor-arg value="8"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+</beans>
